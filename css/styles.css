@@ -1,0 +1,257 @@
+@charset "utf-8";
+/*
+ Ricardo Jose Dias da Silva
+ 22/03/2021
+
+*/
+
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+
+@media only screen and (max-width: 480px) {}
+
+/* ================================
+Tablet Styles: 481px and greater
+================================
+*/
+
+@media only screen and (min-width: 481px) {}
+
+/* =================================
+Desktop Styles: 769px and greater
+=================================
+*/
+
+@media only screen and (min-width: 769px) {}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Audiowide", sans-serif;
+}
+
+/* menu -----------------------------*/
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+  width: 1100px;
+  
+  display: inline-block;
+}
+
+ul.topnav li {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  color:#333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color:#4CAF50;
+}
+
+ul.topnav li a.active {
+  background-color: #4CAF50;
+}
+
+ul.topnav li.left {
+  float: left;
+}
+
+
+.footer {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  background-color:white;
+  color: white;
+  text-align: left;
+  text-indent: 50px;
+}
+
+/*footer Li */
+ul.botnav {
+
+  margin: 0 auto;
+  background-color:white;
+  width: auto;
+  left: auto;
+  right: auto;
+  display: inline-block;
+}
+
+ul.botnav li a {
+  display: block;
+  color:#333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.botnav li a:hover:not(.active) {
+  background-color:#4CAF50;
+}
+
+
+ul.botnav li {
+  float: right;
+}
+
+ul.botnav li.left {
+  float: left;
+}
+
+
+ul.topnav li.top {
+
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  ul.topnav li.right, ul.topnav li, ul.topnav li.left {
+    float: none;
+
+  }
+  .footer {
+    text-align: center;
+    text-indent: 0px;
+  }
+
+  ul.topnav {
+    width: auto;
+  }
+
+  ul.botnav {
+    display: none;
+  }
+
+  ul.topnav li.top {
+
+    display: none;
+  }
+}
+
+/* TABLETS / IPAD */
+@media screen and (min-width: 400px) {
+
+  @media screen and (max-width: 800px) {
+      ul.topnav li.right, ul.topnav li {
+
+        display: inline-block;
+      }
+      ul.topnav li.left {
+
+        display: none;
+      }
+
+      ul.topnav li.top {
+        display: inline-block;
+        text-align: center;
+        margin-top: 0cm;
+        position: -ms-page;
+      }
+
+      .footer {
+        text-align: center;
+        text-indent: 0px;
+        width: auto;
+      }
+
+      ul.topnav {
+        width: auto;
+      }
+
+      ul.botnav {
+       /* display: none;*/
+        display: inline-block;
+      }
+  } 
+}
+/* GRID CENTRAL =================================*/
+* {
+  box-sizing: border-box;
+}
+
+
+.centerDiv
+{
+  width: 100%;
+  height:auto;
+  margin: 0 auto;
+  background-color:#faf9f6 ;
+}
+.div1
+{
+  width: 33.33%;
+  height:auto;
+  background-color:#faf9f6 ;
+  float:left;
+}
+.div2
+{
+  width: 33.33%;
+  height:auto;
+  background-color:#faf9f6 ;
+  float:left;
+}
+.div3
+{
+  width: 33.33%;
+  height:auto;
+  background-color:#faf9f6 ;
+  float:left;
+}
+
+.div4
+{
+  width: 33.33%;
+  height:auto;
+  background-color:#faf9f6 ;
+  float:left;
+}
+.div5
+{
+  width: 33.33%;
+  height:auto;
+  background-color:#faf9f6 ;
+  float:left;
+}
+.div6
+{
+  width: 33.33%;
+  height:auto;
+  background-color:#faf9f6 ;
+  float:left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .div1, .div2, .div3, .div4, .div5, .div6 {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .div1, .div2, .div3, .div4, .div5, .div6  {
+    width: 100%;
+  }
+}
